@@ -1,0 +1,173 @@
+body{
+	margin: 0;
+	background: black;
+	overflow-x: hidden;
+}
+.main{
+	width: 100vw;
+	height: 85vh;
+	background: url('images/обои.png') no-repeat;
+	background-size: 100% auto;
+	padding-top: 14vh;
+}
+.spider1{
+	width: 10vw;
+	position: absolute;
+	left: 10vw;
+	top: -9vh;
+	animation: prig 4s infinite ease alternate;
+}
+.spider2{
+	width: 8vw;
+	position: absolute;
+	left: 30vw;
+	top: -24vh;
+	animation: prig 3s infinite ease alternate;
+}
+.spider3{
+	width: 12vw;
+	position: absolute;
+	right: 15vw;
+	top: -4vh;
+	animation: prig 5s infinite ease alternate;
+}
+@keyframes prig{
+	0%{top: -90vh;}
+	100%{top: -4vh;}
+}
+.pumpkin{
+	width: 50vh;
+	height: 50vh;
+	display: block;
+	margin: 0 auto;
+	transform: scale(0);
+	animation: opa 0.15s linear;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+@keyframes opa{
+	0%{transform: scale(0);}
+	100%{transform: scale(1);}
+}
+h1{
+	font-size: 30vh;
+	font-family: 'Are You Serious', cursive;
+	color: #ff8000;
+	text-align: center;
+	margin: 0;
+}
+.pump{
+	width: 15vh;
+	height: 15vh;
+	margin: 0 1vh;
+}
+.main2{
+	width: 100vw;
+	margin: 3vh auto;
+}
+.infa{
+	width: 75vw;
+	margin: 2vh auto;
+	position: relative;
+}
+.text{
+	font-size: 30px;
+	font-family: 'Underdog', cursive;
+	color: #ff8000;
+	text-align: justify;
+}
+.boom{
+	width: 35vw;
+	height: 23vw;
+	background: url('images/1038093004_0_0_1920_1279_600x0_80_0_0_d8657a2f61485183aa4436ba2dbb7e29.jpg.webp') no-repeat;
+	background-size: 100% auto;
+	margin: 1vh auto;
+	box-shadow: 0px 0px 16px 18px rgba(0, 0, 0, 1) inset;
+}
+.boom1{
+	width: 35vw;
+	height: 23vw;
+	background: url('images/1038413354_0_0_3071_2048_600x0_80_0_0_28f437932187a800e8a8f29a3891b048.jpg.webp') no-repeat;
+	background-size: 100% auto;
+	margin: 1vh auto;
+	box-shadow: 0px 0px 16px 18px rgba(0, 0, 0, 1) inset;
+}
+.kasper{
+	height: 25vh;
+	opacity: 0.45;
+	position: absolute;
+	top: 100vh;
+	animation: boo 15s infinite linear alternate;
+	z-index: 1;
+}
+.kasper1{
+	height: 25vh;
+	opacity: 0.45;
+	position: absolute;
+	top: 185vh;
+	animation: boo 20s infinite linear alternate-reverse;
+	z-index: 1;
+}
+@keyframes boo{
+	0%{left: -15vw;}
+	100%{left: 115vw;}
+}
+.main3{
+	width: 75vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.slider{
+	width: 40vw;
+	position: relative;
+	padding-top: 41vw; 
+	display: flex;
+	justify-content: space-around;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider>img{
+	width: 100%;
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	margin-bottom: 2vw;
+	border: 3px solid #999;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+}
+
+.slider input[name='slide_switch']:checked+label {
+	border-color: #ff8000;
+	opacity: 1;
+}
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+.textik{
+	width: 30vw;
+	font-size: 30px;
+	font-family: 'Underdog', cursive;
+	color: #ff8000;
+	text-align: justify;
+	margin: auto;
+}
